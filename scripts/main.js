@@ -18,7 +18,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   document.getElementById("loader-container").style.display = "block"; // Show the loader
 
   // Submit the form data to your server using the fetch API
-  fetch("https://resume-server-django-f9d2a9cdy-saitrs-projects.vercel.app/submit_form/", {
+  fetch("https://resume-server-django.vercel.app/submit_form/", {
     method: "POST",
     body: new FormData(e.target), // Assuming 'e.target' is your form element
   })
